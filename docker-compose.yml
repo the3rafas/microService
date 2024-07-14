@@ -1,0 +1,10 @@
+version: "3"
+services:
+  userSecurety:
+    build:
+      context: ./userGroup
+      dockerfile: dockerfile
+    container_name: userSecurety
+    volumes: 
+      - /app/node_Modulea
+      - ./usergroup:/app
